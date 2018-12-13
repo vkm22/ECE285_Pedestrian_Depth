@@ -101,7 +101,7 @@ class PSMNet(nn.Module):
 
 
     def forward(self, left, right):
-
+      
         refimg_fea     = self.feature_extraction(left)
         targetimg_fea  = self.feature_extraction(right)
 
