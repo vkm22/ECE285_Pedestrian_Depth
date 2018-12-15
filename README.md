@@ -17,10 +17,10 @@ This project repository contains the following folders and their contents:
 * **Code**: This includes all of our code for this project.  
   * **Inference & Depth Estimation.ipynb**: Our main DEMO code. This gives instructions on how to run inference for Faster-RCNN, code to run a     demo of Mask R-CNN, and code to generate a depth map with PSMNet. 
   * **run_faster_rcnn_inference.sh**: Shell script that runs commands for inference on Faster-RCNN model. We cannot run this in a Jupyter         notebook, as inference simply requires running commands on the shell. The instructions to run this, however are provided in the above     main DEMO notebook.  
-  * Conversion Utilities.ipynb: simple Python notebook to convert video to image frames with OpenCV, and vice versa
-  * depth_map_creator.py: OpenCV Python code to generate depth maps by using the camera calibration parameters on left/right input camera     images. 
-  * stereo_camera_calibration_parameters.npz: Camera calibration parameters obtained from real measurements on the golf carts used by the     UCSD Autonomous Vehicle Labratory.
-* **input_images**: input images from 2 different cameras on the golf carts used by UCSD AVL. The left front camera images are in                "left_view" while the right front camera are in "right_view". These are obtained from converting the original videos to image frames at    29.97 fps. 
+  * **Conversion Utilities.ipynb**: simple Python notebook to convert video to image frames with OpenCV, and vice versa
+  * **depth_map_creator.py**: OpenCV Python code to generate depth maps by using the camera calibration parameters on left/right input camera images. 
+  * **stereo_camera_calibration_parameters.npz**: Camera calibration parameters obtained from real measurements on the golf carts used by the UCSD Autonomous Vehicle Laboratory.
+* **input_images**: input images from 2 different cameras on the golf carts used by UCSD AVL. The left front camera images are in "left_view" while the right front camera are in "right_view". These are obtained from converting the original videos to image frames at    29.97 fps. 
 * **videos**: original videos collected from 2 different cameras on the golf carts on 11/9/18. 
 * **RESULTS_faster_rcnn**: result images with bounding boxes obtained from running inference for Faster-RCNN, with left/right images in the     respective left_view, right_view folders. 
 * **RESULTS_mask_rcnn**: result images with bounding boxes and masks obtained from running inference for Mask-RCNN. 
